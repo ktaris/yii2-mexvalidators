@@ -1,4 +1,4 @@
-# Yii Mexico Data Validators (yii-mexvalidators)
+# Yii2 Mexico Data Validators (yii2-mexvalidators)
 
 Validators for two data strings used in Mexico for identity, RFC and CURP, for use with the [Yii 2.* framework][1].
 
@@ -22,8 +22,8 @@ In order to use the validator, you need to provide the full path to the validato
 public function rules()
 {
     return [
-       ['rfc', RfcValidator::className()],
-       ['curp', CurpValidator::className()],
+       [['rfc'], RfcValidator::className()],
+       [['curp'], CurpValidator::className()],
     ];
 }
 ```
