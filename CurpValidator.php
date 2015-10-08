@@ -37,7 +37,7 @@ class CurpValidator extends Validator
     /**
      * @inheritdoc
      */
-    protected function validateAttribute($model, $attribute)
+    public function validateAttribute($model, $attribute)
     {
         //Uppercase the value (all RFC must be uppercase).
         if ($this->toUpper === true) {
